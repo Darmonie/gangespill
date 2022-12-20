@@ -1,5 +1,5 @@
 let terning = 0
-basic.forever(function () {
+input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
         terning = randint(1, 6)
         basic.showNumber(terning)
@@ -7,4 +7,7 @@ basic.forever(function () {
     if (terning == 6) {
         basic.showIcon(IconNames.Surprised)
     }
+})
+basic.forever(function () {
+	
 })
